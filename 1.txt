@@ -1,4 +1,0 @@
-text 1
-
-litle-feature
-big-feature
