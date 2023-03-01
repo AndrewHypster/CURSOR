@@ -65,7 +65,7 @@ if ((price[0] + price[1] + price[2]) <= 500)
     consoleLog(`<br/> Решта: ${500 - (price[0] + price[1] + price[2])}`); // проста сума - floor сума
 
 // Середнє
-consoleLog('<br/> Середнє значення: '+(price[0] + price[1] + price[2]).toFixed(2));
+consoleLog('<br/> Середнє значення: '+((price[0] + price[1] + price[2])/3).toFixed(2));
 
 consoleLog('<br/><br/><b>Завдання з зірочкою</b><br/><br/>');
 
