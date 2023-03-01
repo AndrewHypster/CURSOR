@@ -74,7 +74,7 @@ const discount = Math.round(Math.random()*50); // знижка від 0 до 50
 consoleLog(`Знижка: ${discount}% <br/>`);
 const discountedPrice = ((price[0] + price[1] + price[2])*(discount/100)).toFixed(2);
 consoleLog('Ціна зі знижкою: '+ discountedPrice +'<br/>');
-consoleLog(`Прибуток: ${((price[0] + price[1] + price[2])/2)-(discountedPrice)}`);
+consoleLog(`Прибуток: ${(((price[0] + price[1] + price[2])/2)-(discountedPrice)).toFixed(2)}`);
 
 // Шаблонний рядок
 consoleLog('<br/><br/><b>Шаблонний рядок</b><br/><br/>');
