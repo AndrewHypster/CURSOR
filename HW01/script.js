@@ -1,7 +1,7 @@
 // Товари
-let bun = 15.678,
-    book = 123.965,
-    butter = 90.2345;
+const bun = 15.678,
+      book = 123.965,
+      butter = 90.2345;
 
 console.log(`* Товари *\n\nБулка = ${bun}\nКнижка = ${book}\nМасло = ${butter}`);
 
