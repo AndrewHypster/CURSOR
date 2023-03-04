@@ -13,7 +13,5 @@ if((+N) && (+M)) {                 // користувач ввів нормал
             sum += +N;  // перетворюємо N в число і додаємо до sum
         }
         document.writeln(`<h2>${sum}</h2>`);
-    } else {
-        document.writeln(`<h2>Введіть цілі числа!!!</h2>`);
-    }
+    } else document.writeln(`<h2>Введіть цілі числа!!!</h2>`);
 } else document.writeln(`<h2>Введіть нормальні числа!!!</h2>`);
