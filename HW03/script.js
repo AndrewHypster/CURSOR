@@ -3,7 +3,7 @@ function menu () {
     //const numFunc = prompt('Виберіть одну з функцій від 1 до 6\nФункції йдуть по порядку як і в завданні', '');
 
     //let num = '';
-    /*switch (+numFunc) {
+    switch (+numFunc) {
         case 1:
             num = prompt('Найбільша цифра з даного числа\nВведіть ціле число', '');
             if (checkingNumber(num))
