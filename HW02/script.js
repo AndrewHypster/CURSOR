@@ -15,7 +15,7 @@ while (true) {
                 }
                 sum += +N;  // перетворюємо N в число і додаємо до sum
             }
-            document.writeln(`<h2>Сума чисел від ${N} до ${M} = ${sum}</h2>`);
+            document.writeln(`<h2>${sum}</h2>`);
             break;  // закінчення роботи програми
         } else {
             alert('Введіть цілі числа!!!');
