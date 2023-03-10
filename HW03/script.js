@@ -61,17 +61,17 @@ function menu () {
     }
 } */
 
-document.writeln('<h2>Максимальна цифра з числа 1465743</h2>');
+document.writeln('<h3>Максимальна цифра з числа 1465743</h3>');
 getMaxDigit(1465743);
-document.writeln('<h2>Піднесення 6 до степення 2</h2>');
+document.writeln('<h3>Піднесення 6 до степення 2</h3>');
 raiseToPover(6, 2);
-document.writeln('<h2>Першу букву робить велику велику, а інші малі з слова dRhfWянтюНуіз</h2>');
+document.writeln('<h3>Першу букву робить велику велику, а інші малі з слова dRhfWянтюНуіз</h3>');
 creatName('dRhfWянтюНуіз');
-document.writeln('<h2>Вираховує з зарплатні (1000) податки (19.5%)</h2>');
+document.writeln('<h3>Вираховує з зарплатні (1000) податки (19.5%)</h3>');
 deductTax (1000, 19.5);
-document.writeln('<h2>Рандомне число з проміжку 100 - 150</h2>');
+document.writeln('<h3>Рандомне число з проміжку 100 - 150</h3>');
 getRandomNumber(100, 150);
-document.writeln('<h2>Рахує скільки таких букв (а) є в слові (Асталавіста)</h2>');
+document.writeln('<h3>Рахує скільки таких букв (а) є в слові (Асталавіста)</h3>');
 countLetter('Асталавіста', 'а');
 
 function getMaxDigit(number) {
