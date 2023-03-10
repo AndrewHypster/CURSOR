@@ -1,6 +1,6 @@
 menu();
 function menu () {
-    const numFunc = prompt('Виберіть одну з функцій від 1 до 6', '');
+    const numFunc = prompt('Виберіть одну з функцій від 1 до 6\nФункції йдуть по порядку як і в завданні', '');
 
     let num = '';
     switch (+numFunc) {
