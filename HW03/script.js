@@ -2,17 +2,21 @@ menu();
 function menu () {
     const numFunc = prompt('Виберіть одну з функцій від 1 до 6', '');
 
-    const num = '';
+    let num = '';
     switch (+numFunc) {
         case 1:
             num = prompt('Найбільша цифра з даного числа\nВведіть ціле число', '');
-            getMaxDigit(num);
+            if (checkingNumber(num))
+                getMaxDigit(num);
             break;
 
         case 2:
             num = prompt('Піднесення до степення\nВведіть ціле число', '');
             const pover = prompt('Піднесення до степення\nВведіть ступінь числа', '');
-            raiseToPover(num, pover);
+            if (checkingNumber(num)) { // дві провірки на числа
+                if (checkingNumber(pover))
+                    raiseToPover(num, pover);
+            }
             break;
 
         case 3:
@@ -23,16 +27,27 @@ function menu () {
         case 4:
             const salary = prompt('Віднімає % від зарплати\nВведіть свою зарплату', '');
             const percent = prompt('Віднімає % від зарплати\nВідсоток податку: ', '');
-            if(percent == '')
-                deductTax (salary);
-            else
-                deductTax (salary, percent);
+            if(percent == '') {
+                if (checkingNumber(salary)) // провірка на число
+                    deductTax (salary);
+            }
+            else {
+                if (checkingNumber(salary)) {
+                    if (+percent)
+                        deductTax (salary, percent);
+                    alert('Error: Ви ввели неправильний %');
+                    menu();
+                }
+            }
             break;
 
         case 5:
             num = prompt('Рандом в межах\nВведіть перше число', '');
             const num2 = prompt('Рандом в межах\nВведіть друге число', '');
-            getRandomNumber(num, num2);
+            if (checkingNumber(num)) {
+                if (checkingNumber(num2))
+                    getRandomNumber(num, num2);
+            }
             break;
 
         case 6:
@@ -98,4 +113,18 @@ function countLetter(string, char) {
     }
     alert(`В слові '${string}' є ${numberMatches} букв ${char}.`);
     menu();
+}
+
+// Функція для перевірки чи це є числом чи якимось NaN чи undefine
+function checkingNumber(num) {
+    if(+num && num > 0){    // чи значення є чслом
+        const isFloor = (+num - Math.floor(+num)) > 0 ? false : true;
+        if (isFloor) return true;  // чи число є цілим
+        alert('Error: Ви ввели дробове число замість цілого.')
+        menu();
+    }
+    else {
+        alert('Error: ви ввели букву або відємне число');
+        menu();
+    }
 }
