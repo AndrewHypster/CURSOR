@@ -1,9 +1,9 @@
-menu();
+/*menu();
 function menu () {
-    const numFunc = prompt('Виберіть одну з функцій від 1 до 6\nФункції йдуть по порядку як і в завданні', '');
+    //const numFunc = prompt('Виберіть одну з функцій від 1 до 6\nФункції йдуть по порядку як і в завданні', '');
 
-    let num = '';
-    switch (+numFunc) {
+    //let num = '';
+    /*switch (+numFunc) {
         case 1:
             num = prompt('Найбільша цифра з даного числа\nВведіть ціле число', '');
             if (checkingNumber(num))
@@ -59,7 +59,20 @@ function menu () {
         default:
             menu();
     }
-}
+} */
+
+document.writeln('<h2>Максимальна цифра з числа 1465743</h2>');
+getMaxDigit(1465743);
+document.writeln('<h2>Піднесення 6 до степення 2</h2>');
+raiseToPover(6, 2);
+document.writeln('<h2>Першу букву робить велику велику, а інші малі з слова dRhfWянтюНуіз</h2>');
+creatName('dRhfWянтюНуіз');
+document.writeln('<h2>Вираховує з зарплатні (1000) податки (19.5%)</h2>');
+deductTax (1000, 19.5);
+document.writeln('<h2>Рандомне число з проміжку 100 - 150</h2>');
+getRandomNumber(100, 150);
+document.writeln('<h2>Рахує скільки таких букв (а) є в слові (Асталавіста)</h2>');
+countLetter('Асталавіста', 'а');
 
 function getMaxDigit(number) {
     let max = 0;
@@ -68,8 +81,8 @@ function getMaxDigit(number) {
         if (figure > max) max = figure;               // якщо нова цифра більша за макс
         number = Math.floor(number/10);              // видаляється останя перевірена цифра: 123 -> 12 -> 1 -> 0
     }
-    alert('Найбільша цифра: ' + max);
-    menu();
+    document.writeln('Найбільша цифра: ' + max);
+    // menu();
 }
 
 function raiseToPover(num, pover) {
@@ -77,8 +90,8 @@ function raiseToPover(num, pover) {
     for(let i=1; i<=pover; i++){
         vidpov *= num;
     }
-    alert(vidpov);
-    menu();
+    document.writeln(vidpov);
+    // menu();
 }
 
 function creatName(name) {
@@ -88,18 +101,18 @@ function creatName(name) {
         loverChars += name[i];
     }
     name = name[0].toUpperCase() + loverChars;
-    alert(name);
-    menu();
+    document.writeln(name);
+    // menu();
 }
 
 function deductTax (salary, percent = 19.5) {
-    alert(salary - salary*(percent/100));
-    menu();
+    document.writeln(salary - salary*(percent/100));
+    // menu();
 }
 
 function getRandomNumber(min, max) {
-    alert(Math.raund(Math.random() * (max - min) + (+min)));
-    menu();
+    document.writeln(Math.round(Math.random() * (max - min) + (min)));
+    // menu();
 }
 
 function countLetter(string, char) {
@@ -111,12 +124,12 @@ function countLetter(string, char) {
         if (indexChar == charLower)
             numberMatches++;
     }
-    alert(`В слові '${string}' є ${numberMatches} букв ${char}.`);
-    menu();
+    document.writeln(`В слові '${string}' є ${numberMatches} букв ${char}.`);
+    // menu();
 }
 
 // Функція для перевірки чи це є числом чи якимось NaN чи undefine
-function checkingNumber(num) {
+/*function checkingNumber(num) {
     if(+num && num > 0){    // чи значення є чслом
         const isFloor = (+num - Math.floor(+num)) > 0 ? false : true;
         if (isFloor) return true;  // чи число є цілим
@@ -127,4 +140,4 @@ function checkingNumber(num) {
         alert('Error: ви ввели букву або відємне число');
         menu();
     }
-}
+}*/
