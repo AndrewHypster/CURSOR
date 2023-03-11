@@ -46,23 +46,23 @@ const fourth = (themStudents) => {
     return marksTheme;
 }
 
-// Значення функцій записуєм в змінні для зручності
-let firstStr = first(students),
-    secondStr = second(first(students),themes),
-    thirdStr = third(students, marks),
-    fourthStr = fourth(second(first(students),themes));
-
-const addBr = (array) => {
+const addBr = (array) => {  // в масив після кожного елементу додаємо <br/>, для читабельності
     for(let i=0; i<array.length; i++)
         array[i].push('<br/>');
     return array;
 }
 
+// Значення функцій записуєм в змінні для зручності
+const firstStr = addBr(first(students)).join(),  // додаємо <br/> і перетворюємо масив в строку
+      secondStr = addBr(second(first(students),themes)).join(),
+      thirdStr = addBr(third(students, marks)).join(),
+      fourthStr = addBr(fourth(second(first(students),themes))).join();
+
 document.writeln('<b>Хлопчик, дівчинка</b><br/>');
-document.writeln(addBr(firstStr).join());
+document.writeln(firstStr);
 document.writeln('<br/><b>Теми та студенти</b><br/>');
-document.writeln(addBr(secondStr).join());
+document.writeln(secondStr);
 document.writeln('<br/><b>Оцінки студентів</b><br/>');
-document.writeln(addBr(thirdStr).join());
+document.writeln(thirdStr);
 document.writeln('<br/><b>Рандомна оцінка за тему</b><br/>');
-document.writeln(addBr(fourthStr).join());
+document.writeln(fourthStr);
