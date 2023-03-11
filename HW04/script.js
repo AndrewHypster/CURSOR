@@ -46,4 +46,23 @@ const fourth = (themStudents) => {
     return marksTheme;
 }
 
-document.writeln(first(students) +'<br/><br/>'+ second(first(students),themes) +'<br/><br/>'+ third(students, marks) +'<br/><br/>'+ fourth(second(first(students),themes)));
+// Значення функцій записуєм в змінні для зручності
+let firstStr = first(students),
+    secondStr = second(first(students),themes),
+    thirdStr = third(students, marks),
+    fourthStr = fourth(second(first(students),themes));
+
+const addBr = (array) => {
+    for(let i=0; i<array.length; i++)
+        array[i].push('<br/>');
+    return array;
+}
+
+document.writeln('<b>Хлопчик, дівчинка</b><br/>');
+document.writeln(addBr(firstStr).join());
+document.writeln('<br/><b>Теми та студенти</b><br/>');
+document.writeln(addBr(secondStr).join());
+document.writeln('<br/><b>Оцінки студентів</b><br/>');
+document.writeln(addBr(thirdStr).join());
+document.writeln('<br/><b>Рандомна оцінка за тему</b><br/>');
+document.writeln(addBr(fourthStr).join());
