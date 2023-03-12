@@ -53,21 +53,20 @@ const createStr = (array, index = 1) => {
             array[i].push('<br/>');
         for(let i=0; i<array.length; i++)   // перетворюємо в string
             newArray[i] = array[i].join(' ');
-        createStr (newArray, 2);
+        createStr(newArray, 2);
     }
     else {
         array = array.join(' ');    // перетворюємо в string
-        document.writeln(array + '<br/>')
+        document.writeln(array +'<br/>')
         return array;
     }
-    return newArray;
 }
 
 // Значення функцій записуєм в змінні для зручності
-const firstStr = createStr(first(students)),  // перетворюємо масив в строку
-      secondStr = createStr(second(first(students),themes)),
-      thirdStr = createStr(third(students, marks)),
-      fourthStr = createStr(fourth(second(first(students),themes)));
+const firstStr = createStr(first(students));  // перетворюємо масив в строку
+const secondStr = createStr(second(first(students),themes));
+const thirdStr = createStr(third(students, marks));
+const fourthStr = createStr(fourth(second(first(students),themes)));
 
 document.writeln('<b>Хлопчик, дівчинка</b><br/>');
 document.writeln(firstStr);
