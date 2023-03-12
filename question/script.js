@@ -57,7 +57,7 @@ const createStr = (array, index = 1) => {
     }
     else {
         array = array.join(' ');    // перетворюємо в string
-        document.writeln(array)
+        document.writeln(array + '<br/>')
         return array;
     }
     return newArray;
