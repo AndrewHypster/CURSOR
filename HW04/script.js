@@ -53,10 +53,10 @@ const addBr = (array) => {  // в масив після кожного елем�
 }
 
 // Значення функцій записуєм в змінні для зручності
-const firstStr = addBr(first(students)).join(),  // додаємо <br/> і перетворюємо масив в строку
-      secondStr = addBr(second(first(students),themes)).join(),
-      thirdStr = addBr(third(students, marks)).join(),
-      fourthStr = addBr(fourth(second(first(students),themes))).join();
+const firstStr = addBr(first(students)).join(' '),  // додаємо <br/> і перетворюємо масив в строку
+      secondStr = addBr(second(first(students),themes)).join(' '),
+      thirdStr = addBr(third(students, marks)).join(' '),
+      fourthStr = addBr(fourth(second(first(students),themes))).join(' ');
 
 document.writeln('<b>Хлопчик, дівчинка</b><br/>');
 document.writeln(firstStr);
