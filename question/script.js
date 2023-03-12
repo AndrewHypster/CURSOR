@@ -53,10 +53,10 @@ const createStr = (array, index = 1) => {
     Наприклад: ['Ігор Оля', 'Володя Іра'] -> 'Ігор Оля Володя Іра'*/
     const newArray = [];
     if(index == 1){
-        for(let i=0; i<array.length; i++)   // в масив після кожного елементу додаємо <br/>, для читабельності
-            array[i].push('<br/>');
-        for(let i=0; i<array.length; i++)   // перетворюємо в string
-            newArray[i] = array[i].join(' ');
+        for(let i=0; i<array.length; i++) {
+            array[i].push('<br/>');   // в масив після кожного елементу додаємо <br/>, для читабельності
+            newArray[i] = array[i].join(' ');   // перетворюємо в string
+        }
         createStr(newArray, 2);
     }
     else {
