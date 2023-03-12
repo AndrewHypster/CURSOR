@@ -46,23 +46,31 @@ const fourth = (themStudents) => {
     return marksTheme;
 }
 
-const addBr = (array) => {  // в масив після кожного елементу додаємо <br/>, для читабельності
-    for(let i=0; i<array.length; i++)
-        array[i].push('<br/>');
-    return array;
+const createStr = (array, index = 1) => {
+    /* якщо index = 1, перетворюємо двовимірний масив в одновимірний.
+    Наприклад: [['Ігор', 'Оля'], ['Володя', 'Іра']] -> ['Ігор Оля', 'Володя Іра']*/
+    /* якщо index = 2, перетворюємо одновимірний в строку.
+    Наприклад: ['Ігор Оля', 'Володя Іра'] -> 'Ігор Оля Володя Іра'*/
+    const newArray = [];
+    if(index == 1){
+        for(let i=0; i<array.length; i++) {
+            array[i].push('<br/>');   // в масив після кожного елементу додаємо <br/>, для читабельності
+            newArray[i] = array[i].join(' ');   // перетворюємо в string
+        }
+        createStr(newArray, 2);
+    }
+    else {
+        array = array.join(' ');    // перетворюємо в string
+        document.writeln(array +'<br/>')
+        return;
+    }
 }
 
-// Значення функцій записуєм в змінні для зручності
-const firstStr = addBr(first(students)).join(' '),  // додаємо <br/> і перетворюємо масив в строку
-      secondStr = addBr(second(first(students),themes)).join(' '),
-      thirdStr = addBr(third(students, marks)).join(' '),
-      fourthStr = addBr(fourth(second(first(students),themes))).join(' ');
-
 document.writeln('<b>Хлопчик, дівчинка</b><br/>');
-document.writeln(firstStr);
+createStr(first(students));  // перетворюємо масив в строку та виводим на екран
 document.writeln('<br/><b>Теми та студенти</b><br/>');
-document.writeln(secondStr);
+createStr(second(first(students),themes));
 document.writeln('<br/><b>Оцінки студентів</b><br/>');
-document.writeln(thirdStr);
+createStr(third(students, marks));
 document.writeln('<br/><b>Рандомна оцінка за тему</b><br/>');
-document.writeln(fourthStr);
+createStr(fourth(second(first(students),themes)));
