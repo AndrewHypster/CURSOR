@@ -62,21 +62,15 @@ const createStr = (array, index = 1) => {
     else {
         array = array.join(' ');    // перетворюємо в string
         document.writeln(array +'<br/>')
-        return array;
+        return;
     }
 }
 
-// Значення функцій записуєм в змінні для зручності
-const firstStr = createStr(first(students));  // перетворюємо масив в строку
-const secondStr = createStr(second(first(students),themes));
-const thirdStr = createStr(third(students, marks));
-const fourthStr = createStr(fourth(second(first(students),themes)));
-
 document.writeln('<b>Хлопчик, дівчинка</b><br/>');
-document.writeln(firstStr);
+createStr(first(students));  // перетворюємо масив в строку та виводим на екран
 document.writeln('<br/><b>Теми та студенти</b><br/>');
-document.writeln(secondStr);
+createStr(second(first(students),themes));
 document.writeln('<br/><b>Оцінки студентів</b><br/>');
-document.writeln(thirdStr);
+createStr(third(students, marks));
 document.writeln('<br/><b>Рандомна оцінка за тему</b><br/>');
-document.writeln(fourthStr);
+createStr(fourth(second(first(students),themes)));
