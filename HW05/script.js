@@ -69,6 +69,25 @@ const countPositiveNumbers = (...numbers) => {
     return newNumbers.length;
 }
 
+const divideByThree = (word) => {
+    word = word.toLowerCase();
+    word = word.split('');
+    const wordArray = [];
+    word.forEach(item => {
+        if (item != ' ') wordArray.push(item);
+    })
+    const skladu = [];
+
+    while(wordArray.length > 0) {
+        let threeChars = wordArray.slice(0, 3).join('');
+        wordArray.splice(0, 3);
+        wordArray.join('')
+        skladu.push(threeChars);
+    }
+    return skladu.join(' ');
+}
+
+
 /*const generateCombinations = (word) => {    воно працює лише до трьох букв
     if (word.length > 10) return 'Слово має мати до 10 букв';
     if (word.length < 2) return word;
@@ -99,6 +118,7 @@ document.writeln('<b>getAverage(...numbers):</b> ' + getAverage(999.9, 6, 2, 55,
 document.writeln('<b>getMedian (...numbers):</b> ' + getMedian(999.9, 1, 2, 3, 4) + '</br>');
 document.writeln('<b>filterEvenNumbers (...numbers):</b> ' + filterEvenNumbers(1, 2, 3, 4, 5, 6) + '</br>');
 document.writeln('<b>countPositiveNumbers (...numbers):</b> ' + countPositiveNumbers(1, -2, 3, -4, -5, 6) + '</br>');
+document.writeln('<b>divideByThree (word):</b> ' + divideByThree('I am front end developer') + '</br>');
 
 // допоміжна функція
 function delFractionalNumb (numbers) {
