@@ -35,6 +35,7 @@ const getSubjects = (student = students[0]) => {
         subjects[i] = subjects[i].join('');
     });
     const style = `["${subjects.join('", "')}"]`;
+    // document.writeln(style);
     return subjects;
 }
 
