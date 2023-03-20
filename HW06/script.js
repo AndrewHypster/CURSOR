@@ -85,7 +85,7 @@ const calculateWordLetters = word => {
     const wordLetters = {};
     const chars = [];
 
-    word.forEach((char, i) => {
+    word.forEach(char => {
         if (!chars.some(item => item == char)) {
             wordLetters[char] = 1;
             chars.push(char);
