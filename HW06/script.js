@@ -35,7 +35,7 @@ const getSubjects = (student = students[0]) => {
         subjects[i] = subjects[i].join('');
     });
     const style = `["${subjects.join('", "')}"]`;
-    return style;
+    return subjects;
 }
 
 const getAverageMark = (student = students[0]) => {
