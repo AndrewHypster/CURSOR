@@ -32,4 +32,4 @@ function getMySalary(counry) {
     console.log({ salary, taxes, profit });
 }
 
-const interval = setInterval(getMySalary, 5000, ukraine);
+const interval = setInterval(getMySalary, 10000, ukraine);
