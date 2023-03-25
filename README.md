@@ -7,3 +7,4 @@
 - [HW05](https://andrewhypster.github.io/COURSOR/HW05/index.html) - Перебираючі методи масивів
 - [HW06](https://andrewhypster.github.io/COURSOR/HW06/index.html) - Об'єкти. Операції rest та spread
 - [HW07](https://andrewhypster.github.io/COURSOR/HW07/index.html) - Функціональне програмування
+- [HW08](https://andrewhypster.github.io/COURSOR/HW08/index.html) - Прототипи.ES6 класи
