@@ -1,5 +1,5 @@
 document.body.innerHTML += '<div id="block"></div>'
-const block = $('#block');
+const block = document.querySelector('#block');
 
 block.style.cssText = 'margin-top: 50px; font-size: 0px;'
 
@@ -24,7 +24,3 @@ const generateBlocksInterval = () => {
 
 generateBlocks();
 generateBlocksInterval();
-
-function $(params) {
-    return document.querySelector(params);
-}
