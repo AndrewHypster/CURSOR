@@ -33,20 +33,20 @@ const playSound = key => {
     audio.play();
 }
 
-let i=0;
+let q = 0;
 
 // При нажиманні на любу кнопку виконується функція
 document.onkeydown = key => {
     const isAlready = keysCodes.some(itemKey => itemKey == key.keyCode); // чи створена ця кнопка
-    if (i < 9 && !isAlready) { // добавляє лише 9 кнопок
+    if (q < 9 && !isAlready) { // добавляє лише 9 кнопок
         write(key);
         keysCodes.push(key.keyCode);
-        i++;
+        q++;
     }
-    else if(i < 9 && isAlready) {
+    else if(q < 9 && isAlready) {
         alert('Ця кнопка вже є, нажміть на іншу');
     }
-    else if(i == 9 && isAlready) { // записали 9 кнопок, видаємо звуки
+    else if(q == 9 && isAlready) { // записали 9 кнопок, видаємо звуки
         addLight(key);
         playSound(key);
     }
