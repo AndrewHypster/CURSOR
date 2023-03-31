@@ -55,3 +55,22 @@ document.onkeydown = key => {
     // }
     console.log(`${key.key.toUpperCase()} = ${key.keyCode}`);
 }
+let i=0;
+
+// При нажиманні на любу кнопку виконується функція
+document.onkeydown = key => {
+    const isAlready = keysCodes.some(itemKey => itemKey == key.keyCode); // чи створена ця кнопка
+    if (i < 9 && !isAlready) { // добавляє лише 9 кнопок
+        write(key);
+        keysCodes.push(key.keyCode);
+        i++;
+    }
+    else if(i < 9 && isAlready) {
+        alert('Ця кнопка вже є, нажміть на іншу');
+    }
+    else if(i == 9 && isAlready) { // записали 9 кнопок, видаємо звуки
+        addLight(key);
+        playSound(key);
+    }
+    console.log(`${key.key.toUpperCase()} = ${key.keyCode}`);
+}
