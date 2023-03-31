@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background: url("bg.jpg") bottom center;
+    background-size: cover;
+}
+
+body {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#allKeys {
+    position: absolute;
+    top: 37%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.key {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    margin-top: 0;
+    color: white;
+    background: rgba(0,0,0,0.4);;
+    border: 3px solid rgb(61, 57, 57);
+    border-radius: 25%;
+    text-align: center;
+}
+
+.workKey {
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.key h1 {
+    margin-top: 4%;
+    font-size: 170%;
+}
+
+.key p {
+    font-size: 50%;
+}
