@@ -29,7 +29,7 @@ const playSound = key => {
     });
     var audio = new Audio();
     audio.preload = 'auto';
-    audio.src = `${instruments[index]}.wav`;
+    audio.src = `/sounds/${instruments[index]}.wav`;
     audio.play();
 }
 
