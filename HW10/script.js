@@ -62,7 +62,9 @@ document.onkeydown = key => {
 }
 
 allKeys.addEventListener('click', (e) => {
-    console.log(+e.target.className);
-    addLight(+e.target.className);
-    playSound(+e.target.className);
+    if(q == 9) {
+        addLight(+e.target.className);
+        playSound(+e.target.className);
+    }
+    else alert(`Створіть ще ${9 - q} кнпок`);
 });
