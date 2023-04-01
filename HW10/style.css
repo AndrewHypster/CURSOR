@@ -48,6 +48,7 @@ body {
 }
 
 .key p {
+    height: 75px;
     color: #ffc600;
     font-size: 250%;
 }
