@@ -33,6 +33,7 @@ body {
     border: 8px solid rgb(61, 57, 57);
     border-radius: 25%;
     text-align: center;
+    cursor: pointer;
 }
 
 .workKey {
