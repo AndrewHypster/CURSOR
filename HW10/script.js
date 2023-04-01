@@ -41,7 +41,7 @@ const playSound = key => {
         });
         var audio = new Audio();
         audio.preload = 'auto';
-        audio.src = `/sounds/${instruments[index]}.wav`;
+        audio.src = `${instruments[index]}.wav`;
         audio.play();
     }
 }
