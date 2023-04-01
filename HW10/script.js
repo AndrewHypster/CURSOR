@@ -22,24 +22,28 @@ const addLight = key => {
         workKey.classList.add('workKey'); // додає підсвітку
     }
     else {
-        document.getElementById(`${key}`).classList.add('workKey'); // додає підсвітку
+        if (key != 0)
+            document.getElementById(`${key}`).classList.add('workKey'); // додає підсвітку
+        else console.log('Мишкою нажато на пусте поле діва #allKeys');
     }
 }
 
 const playSound = key => {
-    let index = 0;
-    keysCodes.forEach((code, i) => {
-        if (typeof key == "number") {
-            if(code == key)
+    if (key != 0) {
+        let index = 0;
+        keysCodes.forEach((code, i) => {
+            if (typeof key == "number") {
+                if(code == key)
+                    index = i;
+            }
+            else if(code == key.keyCode)
                 index = i;
-        }
-        else if(code == key.keyCode)
-            index = i;
-    });
-    var audio = new Audio();
-    audio.preload = 'auto';
-    audio.src = `${instruments[index]}.wav`;
-    audio.play();
+        });
+        var audio = new Audio();
+        audio.preload = 'auto';
+        audio.src = `/sounds/${instruments[index]}.wav`;
+        audio.play();
+    }
 }
 
 let q = 0;
