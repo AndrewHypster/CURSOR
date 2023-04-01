@@ -1,12 +1,12 @@
 document.body.innerHTML += '<div id="allKeys"></div>';
-allKeys = document.querySelector('#allKeys');
+const allKeys = document.querySelector('#allKeys');
 
 alert('Створіть кнопки, нажимаючи на них на клавіатурі');
 
 const instruments = ['clap', 'hihat', 'kick', 'openhat', 'boom', 'ride', 'snare', 'tom', 'tink',];
 let indexInsrum = 0;
 const write = (key) => {
-    allKeys.innerHTML += `<div class="key" id="${key.keyCode}"><h1>${key.key.toUpperCase()}</h1><p>${instruments[indexInsrum]}</p></div>`;
+    allKeys.innerHTML += `<div class="key" id="${key.keyCode}"><h1 class="${key.keyCode}">${key.key.toUpperCase()}</h1><p class="${key.keyCode}">${instruments[indexInsrum]}</p></div>`;
     indexInsrum++;
 }
 
@@ -17,24 +17,32 @@ const addLight = key => {
         const key = document.getElementById(code);
         key.classList.remove('workKey');
     });
-    const workKey = document.getElementById(key.keyCode);
-    workKey.classList.add('workKey'); // додає підсвітку
+    if(key.keyCode != undefined){
+        const workKey = document.getElementById(key.keyCode);
+        workKey.classList.add('workKey'); // додає підсвітку
+    }
+    else {
+        document.getElementById(`${key}`).classList.add('workKey'); // додає підсвітку
+    }
 }
 
 const playSound = key => {
     let index = 0;
     keysCodes.forEach((code, i) => {
-        if(code == key.keyCode)
+        if (typeof key == "number") {
+            if(code == key)
+                index = i;
+        }
+        else if(code == key.keyCode)
             index = i;
     });
     var audio = new Audio();
     audio.preload = 'auto';
-    audio.src = `${instruments[index]}.wav`;
+    audio.src = `/sounds/${instruments[index]}.wav`;
     audio.play();
 }
 
 let q = 0;
-
 // При нажиманні на любу кнопку виконується функція
 document.onkeydown = key => {
     const isAlready = keysCodes.some(itemKey => itemKey == key.keyCode); // чи створена ця кнопка
@@ -52,3 +60,9 @@ document.onkeydown = key => {
     }
     console.log(`${key.key.toUpperCase()} = ${key.keyCode}`);
 }
+
+allKeys.addEventListener('click', (e) => {
+    console.log(+e.target.className);
+    addLight(+e.target.className);
+    playSound(+e.target.className);
+});
