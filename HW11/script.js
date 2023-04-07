@@ -6,6 +6,6 @@ async function getRandomChinese(length) {
         length--;
         await new Promise(res => setTimeout(res, 50));
     }
-    document.writeln(chars.join(''));
+    document.writeln(chars.join(' '));
 }
 getRandomChinese(4);
