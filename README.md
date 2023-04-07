@@ -10,3 +10,4 @@
 - [HW08](https://andrewhypster.github.io/COURSOR/HW08/index.html) - Прототипи.ES6 класи
 - [HW09](https://andrewhypster.github.io/COURSOR/HW09/index.html) - DOM
 - [HW10](https://andrewhypster.github.io/COURSOR/HW10/index.html) - Події
+- [HW11](https://andrewhypster.github.io/COURSOR/HW11/index.html) - Асинхронність та Date. Проміси
