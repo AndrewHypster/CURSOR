@@ -1,0 +1,15 @@
+body {
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    margin: 50px;
+    width: fit-content;
+    padding: 5px;
+    background: #0b3e13;
+    color: aliceblue;
+    border-radius: 25%;
+    user-select: none;
+    cursor: pointer;
+}
