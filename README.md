@@ -11,4 +11,5 @@
 - [HW09](https://andrewhypster.github.io/COURSOR/HW09/index.html) - DOM
 - [HW10](https://andrewhypster.github.io/COURSOR/HW10/index.html) - Події
 - [HW11](https://andrewhypster.github.io/COURSOR/HW11/index.html) - Асинхронність та Date. Проміси
+- [HW12](https://andrewhypster.github.io/COURSOR/HW12/index.html) - Робота з сервером
 - [HW12](https://andrewhypster.github.io/COURSOR/HW12Problem/index.html) - Проблема
