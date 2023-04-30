@@ -14,4 +14,5 @@
 - [HW12](https://andrewhypster.github.io/COURSOR/HW12/index.html) - Робота з сервером
 - [HW12](https://andrewhypster.github.io/COURSOR/HW12Problem/index.html) - Проблема
 - [HW13](https://andrewhypster.github.io/COURSOR/HW13/index.html) - Символи. Генератори. Ітератори
-- [HW15](https://andrewhypster.github.io/COURSOR/HW15/src/index.html)
+- [HW15](https://andrewhypster.github.io/COURSOR/HW15/src/index.html) - Інструменти. Модульність коду та Webpack
+- [HW16](https://andrewhypster.github.io/COURSOR/hw16/src/index.html) - ReactJS. Основи
