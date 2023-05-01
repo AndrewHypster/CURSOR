@@ -17,4 +17,3 @@
 - [HW15](https://andrewhypster.github.io/COURSOR/HW15/src/index.html) - Інструменти. Модульність коду та Webpack
 - [HW16](https://andrewhypster.github.io/COURSOR/hw16/build/index.html) - ReactJS. Основи build 
 - [HW16](https://andrewhypster.github.io/COURSOR/hw16/public/index.html) - ReactJS. Основи public
-- [HW16](https://andrewhypster.github.io/COURSOR/hw16) - ReactJS. Основи public
