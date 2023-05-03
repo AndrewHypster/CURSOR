@@ -15,3 +15,4 @@
 - [HW13](https://andrewhypster.github.io/COURSOR/HW13/index.html) - Символи. Генератори. Ітератори
 - [HW15](https://andrewhypster.github.io/COURSOR/HW15/src/index.html) - Інструменти. Модульність коду та Webpack
 - [HW16](https://andrewhypster.github.io/COURSOR/hw16/build/index.html) - ReactJS. Основи
+- [test](https://andrewhypster.github.io/COURSOR/test/app/build/index.html)
