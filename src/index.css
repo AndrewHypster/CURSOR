@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+}
+
+#root {
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  transition: 0.5s;
+}
+
+#root:hover {
+  box-shadow: #bdbdbd 0px 0px 14px;
+  transition: 0.5s;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+input {
+  height: 14px;
+  width: 100px;
+}
+
+.checkBox, .addContact {
+  height: 20px;
+  width: 20px;
+  font-size: 16px;
+  color: aliceblue;
+  background-color: #dc9c3c;
+  border: rgb(255, 255, 255) 1px solid;
+  box-shadow: #547fff 0px 0px 0px 1px;
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.contact {
+  margin-top: 10px;
+  padding: 8px;
+  background: linear-gradient(45deg, #fff, #547fff, #fff, #fff154);
+  background-size: 900%;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+  animation: contact both 500ms;
+  transition: all 0.3s ease-in;
+}
+
+.contact:hover {
+  animation: contactHover both 1s;
+}
+
+@keyframes contactHover {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+    box-shadow: #3571a6b3 0px 0px 8px;
+  }
+}
+
+@keyframes contact {
+  0% {
+    background-position: 100% 0;
+    box-shadow: #3571a6b3 0px 0px 8px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
