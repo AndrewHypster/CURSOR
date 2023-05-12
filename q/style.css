@@ -1,0 +1,29 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.text{
+    width: 100%;
+    font-size: 50px;
+    background: url(./2.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 25s infinite linear;
+    display: block;
+}
+
+@keyframes animate {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
