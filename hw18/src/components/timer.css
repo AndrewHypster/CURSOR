@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.timeLine {
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.timeBlock {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.timeBlock p {
+  font-size: 40px;
+  font-family: 'Fraunces', serif;
+}
+
+.green {
+  height: 100%;
+  width: 90%;
+  background: green;
+}

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 300px;
+  justify-content: center;
+  display: flex;
+}
+
+#root {
+  margin-top: 20px;
+  padding: 14px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.inputs {
+  width: 250px;
+  justify-content: space-around;
+  display: flex;
+}
+
+input {
+  width: 100px;
+}
+
+.buttons {
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.buttons p {
+  width: 90px;
+  margin-top: 8px;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+p {
+  user-select: none;
+}
