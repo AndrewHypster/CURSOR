@@ -1,9 +1,7 @@
-[
-  {
-    "id": 0,
-    "firstName": "Andrii",
-    "lastName": "Hrechukh",
-    "email": "andrewgrechukh123@gmail.com",
-    "password": "Andrii1503"
-  },
-]
+{
+  "id": 0,
+  "firstName": "Andrii",
+  "lastName": "Hrechukh",
+  "email": "andrewgrechukh123@gmail.com",
+  "password": "Andrii1503"
+}
