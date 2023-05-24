@@ -17,5 +17,5 @@
 - [HW16](https://andrewhypster.github.io/COURSOR/hw16/build/index.html) - ReactJS. Основи
 - [HW17](https://andrewhypster.github.io/COURSOR/hw17/build/index.html) - ReactJS. Хуки
 - [HW18](https://andrewhypster.github.io/COURSOR/hw18/build/index.html) - Классові компоненти Стан та життєвий цикл
-- [HW19](https://andrewhypster.github.io/COURSOR/hw19/build/index.html) - 
-- [HW20](https://andrewhypster.github.io/COURSOR/hw20/build/index.html) - 
+- [HW19](https://andrewhypster.github.io/COURSOR/hw19/build/index.html) - ReactJS. Поняття SPA. Навігація
+- [HW20](https://andrewhypster.github.io/COURSOR/hw20/build/index.html) - ReactJS. Підходи до стилізації. StyledComponents. Animations. localStorage
