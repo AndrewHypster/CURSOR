@@ -1,0 +1,32 @@
+.wrapperFriend {
+  height: 40vw;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.friend {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background: #281c1c;
+  border-radius: 15%;
+  box-shadow: 0 0 15px #635252;
+  align-content: center;
+  display: grid;
+}
+
+.friend img {
+  margin: auto;
+  margin-bottom: 12px;
+  max-width: 200px;
+  border: solid 10px rgb(8, 44, 14);
+  border-radius: 50%;
+}
+
+.friend h2, .friend h3 {
+  color: rgb(205, 210, 214);
+  font-family: sans-serif;
+  margin-bottom: 8px;
+}

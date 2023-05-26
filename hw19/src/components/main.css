@@ -1,0 +1,41 @@
+.wrapper {
+  max-width: 1100px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+.mainRight {
+  color: aliceblue;
+  background: #554664;
+  border-radius: 20px;
+  justify-content: end;
+  display: flex;
+}
+
+.mainLeft {
+  margin: 20px 0;
+  background: #a78888;
+  border-radius: 20px;
+  justify-content: start;
+  display: flex;
+}
+
+.photoText {
+  width: 100%;
+  margin: 4px 29px;
+  font-size: 40px;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.mainParagraph {
+  margin-top: 11%;
+  font-size: 26px;
+}
+
+.mainRight img, .mainLeft img {
+  width: 500px;
+  max-height: fit-content;
+}
