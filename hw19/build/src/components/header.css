@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3e3333;
+}
+
+.mainHeader {
+  border-radius: 0px 0px 8px 8px;
+  background: #281c1c; /* позичив в магазині розетка :) */
+  user-select: none;
+  box-shadow: 0px 0px 10px #281c1c;
+}
+
+nav {
+  justify-content: space-around;
+  display: flex;
+}
+
+ul {
+  width: 100%;
+  font-size: 26px;
+  font-family: sans-serif;
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+}
+
+li {
+  z-index: 1;
+  padding: 8px;
+  align-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  flex-wrap: wrap;
+  cursor: pointer;
+  display: flex;
+  animation: initial 0.8s;
+}
+
+li:hover {
+  animation: liHover 0.8s forwards;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title {
+  margin: 0px 50px;
+  text-align: center;
+}
+
+.title .text{
+  width: 100%;
+  font-size: 50px;
+  font-family: 'Tomorrow', sans-serif;
+  background: url(https://i.pinimg.com/564x/dc/41/7a/dc417aae67138336ed4cf1a1eafeaa33.jpg);
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: title 25s infinite linear;
+}
+
+@keyframes liHover {
+  50% {
+    padding: 0;
+    text-shadow: #05bc52 5px 0px 1px;
+    border: 0px solid #fff;
+    border-radius: 4px;
+  }
+
+  100% {
+    border: 4px solid #fff;
+    border-radius: 4px;
+  }
+}
+
+@keyframes title {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
