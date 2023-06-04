@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.Form {
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #cfd1d3;
+  justify-content: space-between;
+  display: flex;
+}
