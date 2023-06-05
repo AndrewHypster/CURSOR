@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {background: #000000;}
+
+.App {
+  width: fit-content;
+  height: fit-content;
+  -webkit-background-clip: text;
+  color: transparent;
+  color: aliceblue;
+  font-size: 0.188vw;
+}
