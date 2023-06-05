@@ -20,3 +20,4 @@
 - [HW19](https://andrewhypster.github.io/COURSOR/hw19/build/index.html) - ReactJS. Поняття SPA. Навігація
 - [HW20](https://andrewhypster.github.io/COURSOR/hw20/build/index.html) - ReactJS. Підходи до стилізації. StyledComponents. Animations. localStorage
 - [HW21](https://andrewhypster.github.io/COURSOR/hw21/build/index.html) - Redux
+- [HW22](https://andrewhypster.github.io/COURSOR/final-hw/build/index.html) - Redux
